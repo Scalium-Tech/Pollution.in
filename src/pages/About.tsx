@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 const About = () => {
   return (
@@ -68,24 +69,24 @@ const About = () => {
                 </p>
                 
                 <div className="flex space-x-4 justify-start mt-6">
-                  <a href="#" className="text-gray-500 hover:text-blue-600">
+                  <a href="#" className="text-gray-500 hover:text-blue-600 transition-colors">
                     <div className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center">
-                      T
+                      <Twitter size={16} />
                     </div>
                   </a>
-                  <a href="#" className="text-gray-500 hover:text-blue-600">
+                  <a href="#" className="text-gray-500 hover:text-blue-600 transition-colors">
                     <div className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center">
-                      F
+                      <Facebook size={16} />
                     </div>
                   </a>
-                  <a href="#" className="text-gray-500 hover:text-blue-600">
+                  <a href="#" className="text-gray-500 hover:text-blue-600 transition-colors">
                     <div className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center">
-                      L
+                      <Linkedin size={16} />
                     </div>
                   </a>
-                  <a href="#" className="text-gray-500 hover:text-blue-600">
+                  <a href="#" className="text-gray-500 hover:text-blue-600 transition-colors">
                     <div className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center">
-                      I
+                      <Instagram size={16} />
                     </div>
                   </a>
                 </div>

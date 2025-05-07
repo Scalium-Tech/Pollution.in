@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -40,25 +41,25 @@ const Footer = () => {
           <h2 className="text-white font-semibold text-lg mb-4">Contact Us</h2>
           <p className="mb-2">Email: info@pollution.in</p>
           <div className="flex space-x-4 mt-6">
-            {/* Social Media Links (placeholder icons) */}
-            <a href="#" className="text-gray-400 hover:text-primary">
+            {/* Social Media Links with proper icons */}
+            <a href="#" className="text-gray-400 hover:text-primary transition-colors">
               <div className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center">
-                T
+                <Twitter size={16} />
               </div>
             </a>
-            <a href="#" className="text-gray-400 hover:text-primary">
+            <a href="#" className="text-gray-400 hover:text-primary transition-colors">
               <div className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center">
-                F
+                <Facebook size={16} />
               </div>
             </a>
-            <a href="#" className="text-gray-400 hover:text-primary">
+            <a href="#" className="text-gray-400 hover:text-primary transition-colors">
               <div className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center">
-                L
+                <Linkedin size={16} />
               </div>
             </a>
-            <a href="#" className="text-gray-400 hover:text-primary">
+            <a href="#" className="text-gray-400 hover:text-primary transition-colors">
               <div className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center">
-                I
+                <Instagram size={16} />
               </div>
             </a>
           </div>
