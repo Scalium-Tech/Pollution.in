@@ -7,7 +7,7 @@ import PollutionTypeCard from '../components/PollutionTypeCard';
 import FeatureCard from '../components/FeatureCard';
 import NewsCard from '../components/NewsCard';
 import CallToAction from '../components/CallToAction';
-import { ChartBar, FileText, Globe, Book, Newspaper } from 'lucide-react';
+import { ChartBar, FileText, Globe, Book } from 'lucide-react';
 
 const Index = () => {
   return (

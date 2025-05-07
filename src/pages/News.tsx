@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import NewsCard from '../components/NewsCard';
 
 const News = () => {
   const newsItems = [
@@ -11,7 +12,7 @@ const News = () => {
       date: "May 5, 2025",
       summary: "The Ministry of Environment, Forest and Climate Change has announced revised air quality standards for Indian cities, reducing permissible limits for particulate matter and other pollutants.",
       category: "Policy Update",
-      imageUrl: "https://via.placeholder.com/600x400"
+      imageUrl: "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=600&q=80"
     },
     {
       id: 2,
@@ -19,7 +20,7 @@ const News = () => {
       date: "May 2, 2025",
       summary: "A recent study by the National Institute of Oceanography reveals significant decrease in plastic waste along India's coastline following the single-use plastic ban implementation.",
       category: "Research",
-      imageUrl: "https://via.placeholder.com/600x400"
+      imageUrl: "https://images.unsplash.com/photo-1621451537084-482c73073a0f?auto=format&fit=crop&w=600&q=80"
     },
     {
       id: 3,
@@ -27,7 +28,7 @@ const News = () => {
       date: "April 28, 2025",
       summary: "The Central Pollution Control Board's latest water quality assessment indicates improvement in dissolved oxygen levels and reduction in biological contaminants in several major rivers.",
       category: "Water Quality",
-      imageUrl: "https://via.placeholder.com/600x400"
+      imageUrl: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80"
     },
     {
       id: 4,
@@ -35,7 +36,7 @@ const News = () => {
       date: "April 25, 2025",
       summary: "A collaborative project between government agencies and NGOs will distribute low-cost air quality monitors to citizens across 50 cities to enhance pollution data collection.",
       category: "Citizen Science",
-      imageUrl: "https://via.placeholder.com/600x400"
+      imageUrl: "https://images.unsplash.com/photo-1545158535-c3f7168a9b92?auto=format&fit=crop&w=600&q=80"
     },
     {
       id: 5,
@@ -43,7 +44,7 @@ const News = () => {
       date: "April 20, 2025",
       summary: "In a landmark judgment, the Supreme Court has directed all state governments to submit comprehensive action plans to curb industrial pollution within 60 days.",
       category: "Legal",
-      imageUrl: "https://via.placeholder.com/600x400"
+      imageUrl: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80"
     },
     {
       id: 6,
@@ -51,7 +52,7 @@ const News = () => {
       date: "April 15, 2025",
       summary: "India will host a major international conference focusing on climate change adaptation strategies for developing countries next month.",
       category: "Event",
-      imageUrl: "https://via.placeholder.com/600x400"
+      imageUrl: "https://images.unsplash.com/photo-1618241201672-487328b2bd5b?auto=format&fit=crop&w=600&q=80"
     }
   ];
 
@@ -73,7 +74,7 @@ const News = () => {
             <div className="md:flex">
               <div className="md:w-1/2">
                 <img 
-                  src="https://via.placeholder.com/800x600" 
+                  src="https://images.unsplash.com/photo-1534307671554-9a6d81f4d629?auto=format&fit=crop&w=800&q=80" 
                   alt="Featured news" 
                   className="h-full w-full object-cover"
                 />

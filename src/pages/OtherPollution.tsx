@@ -41,8 +41,12 @@ const OtherPollution = () => {
                 </p>
               </div>
               <div className="md:w-1/3 mt-6 md:mt-0">
-                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-                  [Noise Pollution Illustration]
+                <div className="rounded-lg h-64 overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1518562923427-19e694fbd8e9?auto=format&fit=crop&q=80&w=900" 
+                    alt="Busy traffic junction with vehicles causing noise pollution" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -52,8 +56,12 @@ const OtherPollution = () => {
           <div className="bg-white rounded-lg shadow-md p-8 mb-12">
             <div className="md:flex items-center">
               <div className="md:w-1/3 mb-6 md:mb-0">
-                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-                  [Soil Pollution Illustration]
+                <div className="rounded-lg h-64 overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&q=80&w=900" 
+                    alt="Soil contamination from industrial waste" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               <div className="md:w-2/3 md:pl-8">
@@ -102,8 +110,12 @@ const OtherPollution = () => {
                 </p>
               </div>
               <div className="md:w-1/3 mt-6 md:mt-0">
-                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-                  [Light Pollution Illustration]
+                <div className="rounded-lg h-64 overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=80&w=900" 
+                    alt="City skyline at night showing light pollution" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -113,8 +125,12 @@ const OtherPollution = () => {
           <div className="bg-white rounded-lg shadow-md p-8 mb-12">
             <div className="md:flex items-center">
               <div className="md:w-1/3 mb-6 md:mb-0">
-                <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-                  [Radioactive Pollution Illustration]
+                <div className="rounded-lg h-64 overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1631139611098-963a6e716f4c?auto=format&fit=crop&q=80&w=900" 
+                    alt="Radiation warning signs near industrial facility" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               <div className="md:w-2/3 md:pl-8">
@@ -142,37 +158,50 @@ const OtherPollution = () => {
           {/* Thermal Pollution Section */}
           <div className="bg-white rounded-lg shadow-md p-8">
             <h2 className="text-2xl font-semibold text-gray-800 mb-6">Thermal Pollution</h2>
-            <p className="text-gray-600 mb-6">
-              Thermal pollution occurs when water bodies experience a significant change in their natural temperature, usually as a result of industrial processes or power generation. In India, thermal pollution primarily affects rivers and coastal areas near power plants and industrial facilities.
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
-              <div>
-                <h3 className="font-medium text-gray-900 mb-2">Common sources:</h3>
-                <ul className="list-disc pl-5 text-gray-600 space-y-1">
-                  <li>Thermal power plants (coal, nuclear, natural gas)</li>
-                  <li>Industrial manufacturing processes</li>
-                  <li>Refineries and petrochemical plants</li>
-                  <li>Steel mills and smelting operations</li>
-                  <li>Urban runoff from heated surfaces</li>
-                </ul>
+            <div className="md:flex items-center mb-6">
+              <div className="md:w-1/2 pr-0 md:pr-4">
+                <p className="text-gray-600 mb-4">
+                  Thermal pollution occurs when water bodies experience a significant change in their natural temperature, usually as a result of industrial processes or power generation. In India, thermal pollution primarily affects rivers and coastal areas near power plants and industrial facilities.
+                </p>
+                <div className="rounded-lg h-48 md:h-64 overflow-hidden mb-4 md:mb-0">
+                  <img 
+                    src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&q=80&w=900" 
+                    alt="Power plant releasing heated water into river" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
               
-              <div>
-                <h3 className="font-medium text-gray-900 mb-2">Environmental impacts:</h3>
-                <ul className="list-disc pl-5 text-gray-600 space-y-1">
-                  <li>Reduced oxygen levels in water</li>
-                  <li>Altered metabolic rates and reproductive cycles of aquatic organisms</li>
-                  <li>Changes in species composition and biodiversity</li>
-                  <li>Increased vulnerability to disease among aquatic life</li>
-                  <li>Disruption of food webs and ecosystems</li>
-                </ul>
+              <div className="md:w-1/2 pl-0 md:pl-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
+                  <div>
+                    <h3 className="font-medium text-gray-900 mb-2">Common sources:</h3>
+                    <ul className="list-disc pl-5 text-gray-600 space-y-1">
+                      <li>Thermal power plants (coal, nuclear, natural gas)</li>
+                      <li>Industrial manufacturing processes</li>
+                      <li>Refineries and petrochemical plants</li>
+                      <li>Steel mills and smelting operations</li>
+                      <li>Urban runoff from heated surfaces</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h3 className="font-medium text-gray-900 mb-2">Environmental impacts:</h3>
+                    <ul className="list-disc pl-5 text-gray-600 space-y-1">
+                      <li>Reduced oxygen levels in water</li>
+                      <li>Altered metabolic rates and reproductive cycles of aquatic organisms</li>
+                      <li>Changes in species composition and biodiversity</li>
+                      <li>Increased vulnerability to disease among aquatic life</li>
+                      <li>Disruption of food webs and ecosystems</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <p className="text-gray-600">
+                  Mitigation strategies include cooling towers, cooling ponds, artificial lakes, and improved efficiency in industrial processes. Regulations under the Water (Prevention and Control of Pollution) Act govern the discharge of heated effluents into natural water bodies.
+                </p>
               </div>
             </div>
-            
-            <p className="text-gray-600">
-              Mitigation strategies include cooling towers, cooling ponds, artificial lakes, and improved efficiency in industrial processes. Regulations under the Water (Prevention and Control of Pollution) Act govern the discharge of heated effluents into natural water bodies.
-            </p>
           </div>
         </div>
       </div>

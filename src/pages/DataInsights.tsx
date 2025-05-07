@@ -2,6 +2,33 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+
+const airQualityData = [
+  { name: 'Delhi', AQI: 220 },
+  { name: 'Mumbai', AQI: 140 },
+  { name: 'Chennai', AQI: 95 },
+  { name: 'Kolkata', AQI: 165 },
+  { name: 'Bangalore', AQI: 85 },
+  { name: 'Hyderabad', AQI: 105 },
+];
+
+const riverHealthData = [
+  { name: 'Ganga', DO: 5.2, BOD: 3.8 },
+  { name: 'Yamuna', DO: 2.1, BOD: 8.5 },
+  { name: 'Krishna', DO: 6.4, BOD: 2.6 },
+  { name: 'Cauvery', DO: 5.8, BOD: 3.0 },
+  { name: 'Narmada', DO: 7.1, BOD: 2.2 },
+];
+
+const plasticWasteData = [
+  { year: '2019', waste: 3.4 },
+  { year: '2020', waste: 3.2 },
+  { year: '2021', waste: 3.5 },
+  { year: '2022', waste: 3.7 },
+  { year: '2023', waste: 3.6 },
+  { year: '2024', waste: 3.4 },
+];
 
 const DataInsights = () => {
   return (
@@ -24,8 +51,17 @@ const DataInsights = () => {
               <p className="text-gray-600 mb-4">
                 Tracking real-time air quality data across major cities in India.
               </p>
-              <div className="h-48 bg-gray-100 rounded flex items-center justify-center mb-4">
-                [Chart Placeholder]
+              <div className="h-48 rounded mb-4">
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={airQualityData} margin={{ top: 5, right: 5, bottom: 5, left: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" fontSize={11} />
+                    <YAxis fontSize={11} />
+                    <Tooltip />
+                    <Legend wrapperStyle={{ fontSize: '11px' }} />
+                    <Bar dataKey="AQI" fill="#8884d8" />
+                  </BarChart>
+                </ResponsiveContainer>
               </div>
               <button className="text-primary font-medium hover:underline">
                 View detailed air quality data
@@ -38,8 +74,18 @@ const DataInsights = () => {
               <p className="text-gray-600 mb-4">
                 Water quality metrics for major rivers and waterways across the country.
               </p>
-              <div className="h-48 bg-gray-100 rounded flex items-center justify-center mb-4">
-                [Chart Placeholder]
+              <div className="h-48 rounded mb-4">
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={riverHealthData} margin={{ top: 5, right: 5, bottom: 5, left: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" fontSize={11} />
+                    <YAxis fontSize={11} />
+                    <Tooltip />
+                    <Legend wrapperStyle={{ fontSize: '11px' }} />
+                    <Bar dataKey="DO" fill="#82ca9d" name="Dissolved Oxygen" />
+                    <Bar dataKey="BOD" fill="#ff8042" name="BOD" />
+                  </BarChart>
+                </ResponsiveContainer>
               </div>
               <button className="text-primary font-medium hover:underline">
                 Explore water quality trends
@@ -52,8 +98,17 @@ const DataInsights = () => {
               <p className="text-gray-600 mb-4">
                 Statistical data on plastic consumption and waste management.
               </p>
-              <div className="h-48 bg-gray-100 rounded flex items-center justify-center mb-4">
-                [Chart Placeholder]
+              <div className="h-48 rounded mb-4">
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={plasticWasteData} margin={{ top: 5, right: 5, bottom: 5, left: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="year" fontSize={11} />
+                    <YAxis fontSize={11} />
+                    <Tooltip />
+                    <Legend wrapperStyle={{ fontSize: '11px' }} />
+                    <Bar dataKey="waste" fill="#8dd1e1" name="Million Tons" />
+                  </BarChart>
+                </ResponsiveContainer>
               </div>
               <button className="text-primary font-medium hover:underline">
                 View plastic pollution statistics
