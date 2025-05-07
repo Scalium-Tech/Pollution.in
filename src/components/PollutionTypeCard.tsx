@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Air, Droplet, Trash2 } from 'lucide-react';
+import { Wind, Droplet, Trash2 } from 'lucide-react';
 
 interface PollutionTypeCardProps {
   type: 'air' | 'water' | 'plastic';
@@ -14,7 +14,7 @@ const PollutionTypeCard = ({ type, title, description, link }: PollutionTypeCard
   const getIcon = () => {
     switch (type) {
       case 'air':
-        return <Air className="w-16 h-16 mx-auto mb-5 text-primary" />;
+        return <Wind className="w-16 h-16 mx-auto mb-5 text-primary" />;
       case 'water':
         return <Droplet className="w-16 h-16 mx-auto mb-5 text-primary" />;
       case 'plastic':
