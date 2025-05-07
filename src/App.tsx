@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import AirPollution from "./pages/AirPollution";
 import WaterPollution from "./pages/WaterPollution";
 import PlasticPollution from "./pages/PlasticPollution";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/air-pollution" element={<AirPollution />} />
           <Route path="/water-pollution" element={<WaterPollution />} />
           <Route path="/plastic-pollution" element={<PlasticPollution />} />
+          <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
