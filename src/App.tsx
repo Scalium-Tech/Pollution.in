@@ -12,6 +12,7 @@ import OtherPollution from "./pages/OtherPollution";
 import DataInsights from "./pages/DataInsights";
 import LawsPolicies from "./pages/LawsPolicies";
 import News from "./pages/News";
+import ArticlePage from "./pages/ArticlePage";
 import Resources from "./pages/Resources";
 import About from "./pages/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/data-insights" element={<DataInsights />} />
           <Route path="/laws-policies" element={<LawsPolicies />} />
           <Route path="/news" element={<News />} />
+          <Route path="/news/article/:id" element={<ArticlePage />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/about" element={<About />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

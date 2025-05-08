@@ -1,16 +1,17 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface NewsCardProps {
+  id: number;
   image: string;
   title: string;
   summary: string;
   date: string;
   category?: string;
-  link: string;
 }
 
-const NewsCard = ({ image, title, summary, date, category, link }: NewsCardProps) => {
+const NewsCard = ({ id, image, title, summary, date, category }: NewsCardProps) => {
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition-shadow">
       <img 
@@ -30,14 +31,12 @@ const NewsCard = ({ image, title, summary, date, category, link }: NewsCardProps
         <p className="text-sm text-gray-600 mb-3">{summary}</p>
         <div className="flex justify-between items-center">
           <span className="text-xs text-gray-500">{date}</span>
-          <a 
-            href={link} 
+          <Link 
+            to={`/news/article/${id}`} 
             className="text-primary hover:text-blue-700 text-sm font-medium"
-            target="_blank" 
-            rel="noopener noreferrer"
           >
             Read More
-          </a>
+          </Link>
         </div>
       </div>
     </div>
