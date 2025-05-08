@@ -80,7 +80,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <NewsCard 
               id={2}
-              image="https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80" 
+              image="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80" 
               title="New National Clean Air Programme Targets Announced" 
               summary="The government has revised NCAP targets aiming for 40% reduction in particulate matter concentration by 2026." 
               date="May 2, 2025" 
@@ -88,7 +88,7 @@ const Index = () => {
             />
             <NewsCard 
               id={4}
-              image="https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=800&q=80" 
+              image="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80" 
               title="Supreme Court Orders Enhanced Monitoring of River Pollution" 
               summary="The Supreme Court has directed stricter oversight of industrial effluents entering major rivers across 10 states." 
               date="April 28, 2025" 
@@ -96,7 +96,7 @@ const Index = () => {
             />
             <NewsCard 
               id={3}
-              image="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=800&q=80" 
+              image="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" 
               title="Single-Use Plastic Alternatives Show Promise in Market Study" 
               summary="New biodegradable alternatives to single-use plastics are gaining consumer acceptance according to a recent market analysis." 
               date="April 25, 2025" 

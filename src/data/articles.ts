@@ -25,7 +25,7 @@ export const articles: Article[] = [
       "Public participation is a key component of the strategy, with plans to create citizen monitoring committees in every district and integrate environmental education more deeply into school curricula."
     ],
     category: "Breaking News",
-    imageUrl: "https://images.unsplash.com/photo-1534307671554-9a6d81f4d629?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
     featured: true
   },
   {
@@ -41,7 +41,7 @@ export const articles: Article[] = [
       "Health experts have welcomed the move, with the Indian Medical Association noting that the stricter standards could potentially prevent thousands of premature deaths annually from respiratory and cardiovascular diseases linked to air pollution."
     ],
     category: "Policy Update",
-    imageUrl: "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=600&q=80"
+    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ export const articles: Article[] = [
       "The study's findings will be presented at the upcoming International Marine Conservation Congress and will inform the next phase of India's plastic pollution reduction strategy."
     ],
     category: "Research",
-    imageUrl: "https://images.unsplash.com/photo-1621451537084-482c73073a0f?auto=format&fit=crop&w=600&q=80"
+    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: 4,
@@ -89,7 +89,7 @@ export const articles: Article[] = [
       "Similar citizen science projects in countries like South Korea and Poland have successfully identified previously unknown pollution sources and led to effective local interventions."
     ],
     category: "Citizen Science",
-    imageUrl: "https://images.unsplash.com/photo-1545158535-c3f7168a9b92?auto=format&fit=crop&w=600&q=80"
+    imageUrl: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: 6,
@@ -105,7 +105,7 @@ export const articles: Article[] = [
       "Industries in critically polluted clusters will now face more frequent inspections, with the court directing pollution control boards to increase their monitoring capacity within three months."
     ],
     category: "Legal",
-    imageUrl: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80"
+    imageUrl: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: 7,
@@ -121,7 +121,7 @@ export const articles: Article[] = [
       "In conjunction with the conference, there will be a technology exhibition showcasing innovative adaptation solutions from startups and established technology providers."
     ],
     category: "Event",
-    imageUrl: "https://images.unsplash.com/photo-1618241201672-487328b2bd5b?auto=format&fit=crop&w=600&q=80"
+    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80"
   }
 ];
 
@@ -139,4 +139,3 @@ export const getRelatedArticles = (id: number, count: number = 3): Article[] => 
     .sort(() => 0.5 - Math.random())
     .slice(0, count);
 };
-
