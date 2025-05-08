@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import NewsCard from '../components/NewsCard';
 import { articles, getFeaturedArticle } from '../data/articles';
+import { RssIcon } from 'lucide-react';
 
 const News = () => {
   const featuredArticle = getFeaturedArticle();
@@ -17,7 +18,17 @@ const News = () => {
       <div className="flex-grow bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Latest Environmental News</h1>
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-900">Latest Environmental News</h1>
+              <Link 
+                to="/rss" 
+                title="Subscribe to RSS Feed"
+                className="text-orange-500 hover:text-orange-600"
+                aria-label="RSS Feed"
+              >
+                <RssIcon size={24} />
+              </Link>
+            </div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Stay updated with the latest news, research findings, and policy developments related to pollution and environmental conservation in India.
             </p>
